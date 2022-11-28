@@ -14,7 +14,7 @@ pipeline {
           -Dsonar.exclusions=**/*Test*/** \
           -Dsonar.java.binaries=target \
           -Dsonar.organization=Medata \
-          -Dsonar.host.url=https://localhost:9000 \
+          -Dsonar.host.url=http://localhost:9000 \
           -Dsonar.projectKey=interview-pipeline \
           -Dsonar.login=admin \
           org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar'
