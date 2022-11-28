@@ -13,7 +13,7 @@ pipeline {
           -Dsonar.test.inclusions=**/*Test*/** \
           -Dsonar.exclusions=**/*Test*/** \
           -Dsonar.java.binaries=target \
-          -Dsonar.organizationKey=Medata \
+          -Dsonar.organization=Medata \
           -Dsonar.host.url=https://localhost:9000 \
           -Dsonar.projectKey=interview-pipeline \
           -Dsonar.login=admin \
