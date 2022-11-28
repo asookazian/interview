@@ -17,6 +17,7 @@ pipeline {
           -Dsonar.host.url=http://localhost:9000 \
           -Dsonar.projectKey=interview-pipeline \
           -Dsonar.login=admin \
+          -Dsonar.password=sonar \
           org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar'
         }
       }
