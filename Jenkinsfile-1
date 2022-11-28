@@ -7,7 +7,7 @@ pipeline {
     stage('Scan') {
       steps {
         withSonarQubeEnv(installationName: 'SonarQubeLocalServer') { 
-          bat 'mvn clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar -Dsonar.java.libraries=sonar.java.libraries='C:/ProgramData/Jenkins/.jenkins/workspace/TB1863_pipeline/target/classes'
+          bat 'mvn clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar -Dsonar.java.libraries=sonar.java.libraries=$WORKSPACE/target/classes
 
           //mvn clean verify sonar:sonar -f PathProjectParent/pom.xml -Dsonar.java.libraries=../PathProjectEar/target/nameProject.ear
         }
