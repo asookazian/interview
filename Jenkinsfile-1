@@ -6,6 +6,8 @@ pipeline {
   stages {
     stage('Scan') {
       steps {
+
+        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         withSonarQubeEnv(installationName: 'SonarQubeLocalServer') { 
           bat 'mvn clean -Dsonar.sources=. \
           -Dsonar.sources=. \
